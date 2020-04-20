@@ -10,7 +10,7 @@
 
 ## Introducción
 
-Se realiza la implementacion de las operaciones logicas ALU en la FPGA para su visualizacion, para realizar  todo el procedimiento  se deben seguir las siguientes instrucciones:
+Se realiza la implementacion de las operaciones logicas en una  unidad aritmetica logica ALU en la FPGA para su visualizacion, como desarrollo se debe realizar  todo el procedimiento descrito y se deben seguir las siguientes instrucciones:
 
 
 ## descripción 
