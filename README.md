@@ -50,7 +50,13 @@ El diagrama estructural, se soporta en los componentes desarrollados en los ante
 
 ## Suma
  
- Se realiza la  definicion de  una caja negra de entradas y salidas del bloque funcional, luego se instancian los cuatro sumadores de 1 Bit para completar un sumador de 4 bits se instancia el diagrama  de bloques
+ Se realiza la  definicion de  una caja negra de entradas y salidas del bloque funcional.
+
+https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/CAJA%20NEGRA%20SUMADOR.PNG
+
+luego se instancian los cuatro sumadores de 1 Bit para completar un sumador de 4 bits se instancia el diagrama  de bloques.
+
+https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/SUMADOR%204%20BITS.PNG
  
  
  
