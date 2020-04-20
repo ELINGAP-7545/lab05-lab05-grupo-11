@@ -13,17 +13,17 @@
 Se realiza la implementacion de las operaciones logicas en una  unidad aritmetica logica ALU en la FPGA para su visualizacion, como desarrollo se debe realizar  todo el procedimiento descrito y se deben seguir las siguientes instrucciones:
 
 
-## descripción 
+## Descripción 
 La unidad aritmética, es tal que cuenta con componentes para realizar operaciones aritméticas. cada operación aritmética es ejecutada acuerdo al código de la operación. 
 
-## desarrollo del laboratorio. 
+## Desarrollo del laboratorio. 
 Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y segun la siguiente tabla:
 
 
 opcode | operación  enteros positivos
 00| suma
 01| resta 
-10|  multiplicación
+10| multiplicación
 11| división 
 
 Por lo tanto, la unidad debe contar con:
@@ -47,4 +47,15 @@ Según las especificaciones anteriormente descrita, la caja funcional de la unid
 
 El diagrama estructural, se soporta en los componentes desarrollados en los anteriores laboratorios. De esta manera,  tanto el sumador, el multiplicador  y el Display, son tomados de los lab2, lab5 y lab4  respectivamente. Adicional a la estructura de cada operación se encuentra el decodificador  y el multiplexador.
 
+
+## Suma
+ 
+ Se realiza la  definicion de  una caja negra de entradas y salidas del bloque funcional, luego se instancian los cuatro sumadores de 1 Bit para completar un sumador de 4 bits se instancia el diagrama  de bloques
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
