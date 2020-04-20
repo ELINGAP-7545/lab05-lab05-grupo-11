@@ -1,3 +1,11 @@
+# Laboratorio  05
+
+## ALU - Grupo 11
+
+#### 1. Pedro Javier Puerto    61165
+#### 2. Wolfran Esteban Suarez 78259
+#### 3. Jorge Sanchez Abella   79344
+
 # lab05 : Unidad de suma, resta, multiplicación, división y visualización BCD
 ## Introducción
 
