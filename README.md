@@ -58,7 +58,7 @@ luego se instancian los cuatro sumadores de 1 Bit para completar un sumador de 4
 
 ![caja negra sumador 4bits](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/SUMADOR%204%20BITS.PNG)
 
-Instanciamiento suma:
+#Instanciamiento suma:
 
 `timescale 1ns / 1ps
 
