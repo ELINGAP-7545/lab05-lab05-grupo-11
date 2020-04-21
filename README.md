@@ -58,6 +58,27 @@ luego se instancian los cuatro sumadores de 1 Bit para completar un sumador de 4
 
 ![caja negra sumador 4bits](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/SUMADOR%204%20BITS.PNG)
 
+Instanciamiento suma:
+
+`timescale 1ns / 1ps
+
+module sum4b(init, xi, yi,co,sal);
+
+  input init;
+  input [3 :0] xi;
+  input [3 :0] yi;
+  output co;
+  output [3 :0] sal;
+  
+  
+  wire [4:0] st;
+  assign sal= st[3:0];
+  assign Cout = st[4];
+
+  assign st  = 	xi+yi;
+
+endmodule
+
 
 
 
