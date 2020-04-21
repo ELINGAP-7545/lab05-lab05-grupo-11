@@ -8,23 +8,23 @@
 
 # lab05 : Unidad de suma, resta, multiplicacion, division y visualizacion BCD
 
-## Introducción
+## Introduccion
 
 Se realiza la implementacion de las operaciones logicas en una  unidad aritmetica logica ALU en la FPGA para su visualizacion, como desarrollo se debe realizar  todo el procedimiento descrito y se deben seguir las siguientes instrucciones:
 
 
-## Descripción 
+## Descripcionn 
 La unidad aritmética, es tal que cuenta con componentes para realizar operaciones aritméticas. cada operación aritmética es ejecutada acuerdo al código de la operación. 
 
 ## Desarrollo del laboratorio. 
-Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y segun la siguiente tabla:
+Como ejercicio acadademico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y segun la siguiente tabla:
 
 
-opcode | operación  enteros positivos
+opcode | operacionn  enteros positivos
 00| suma
 01| resta 
-10| multiplicación
-11| división 
+10| multiplicacion
+11| division 
 
 Por lo tanto, la unidad debe contar con:
 
