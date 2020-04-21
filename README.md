@@ -6,7 +6,7 @@
 #### 2. Wolfran Esteban Suarez 78259
 #### 3. Jorge Sanchez Abella   79344
 
-# lab05 : Unidad de suma, resta, multiplicación, división y visualización BCD
+# lab05 : Unidad de suma, resta, multiplicacion, division y visualizacion BCD
 
 ## Introducción
 
