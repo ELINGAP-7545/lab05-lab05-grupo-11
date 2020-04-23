@@ -1,6 +1,6 @@
-# Laboratorio  05
+# Laboratorio  05 Corte 2
 
-## ALU - Grupo 11 Corte 2
+## ALU - Grupo 11 
 
 #### 1. Pedro Javier Puerto    61165
 #### 2. Wolfran Esteban Suarez 78259
@@ -14,10 +14,10 @@ Se realiza la implementacion de las operaciones logicas en una  unidad aritmetic
 
 
 ## Descripcionn 
-La unidad aritmética, es tal que cuenta con componentes para realizar operaciones aritméticas. cada operación aritmética es ejecutada acuerdo al código de la operación. 
+La unidad aritmÃ©tica, es tal que cuenta con componentes para realizar operaciones aritmÃ©ticas. cada operaciÃ³n aritmÃ©tica es ejecutada acuerdo al cÃ³digo de la operaciÃ³n. 
 
 ## Desarrollo del laboratorio. 
-Como ejercicio acadademico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y segun la siguiente tabla:
+Como ejercicio acadademico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicaciÃ³n y divisiÃ³n.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selecciÃ³n de la operaciÃ³n se realiza acorde a la seÃ±al opcode, y segun la siguiente tabla:
 
 
 opcode | operacionn  enteros positivos
@@ -29,14 +29,14 @@ opcode | operacionn  enteros positivos
 Por lo tanto, la unidad debe contar con:
 
 1. Los dos puertos de entrada A y B. cada uno de  3 bits.
-2. La señal `opcode` de dos bits, para configurar la operación que se realiza con los datos de `portA` y `portB`.
-3. La a visualización de unidad debe tener las salidas de los 4 ánodos, `An`  y las 7 señales de los cátodos, `sseg`.
-4. Para las FSM  y las visualización dinámica, se debe incluir la señal de `clk` de entrada.
-5. la señal de reset del sistema
+2. La seÃ±al `opcode` de dos bits, para configurar la operaciÃ³n que se realiza con los datos de `portA` y `portB`.
+3. La a visualizaciÃ³n de unidad debe tener las salidas de los 4 Ã¡nodos, `An`  y las 7 seÃ±ales de los cÃ¡todos, `sseg`.
+4. Para las FSM  y las visualizaciÃ³n dinÃ¡mica, se debe incluir la seÃ±al de `clk` de entrada.
+5. la seÃ±al de reset del sistema
 
 ## Diagrama de caja negra
 
-Según las especificaciones anteriormente descrita, la caja funcional de la unidad aritmética propuesta es:
+SegÃºn las especificaciones anteriormente descrita, la caja funcional de la unidad aritmÃ©tica propuesta es:
 
 ![caja negra](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab06_Unidad_aritmetica/doc/cajanegra.png)
 
@@ -45,7 +45,7 @@ Según las especificaciones anteriormente descrita, la caja funcional de la unid
 
 ![estructural](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab06_Unidad_aritmetica/doc/diagraEstructural.png)
 
-El diagrama estructural, se soporta en los componentes desarrollados en los anteriores laboratorios. De esta manera,  tanto el sumador, el multiplicador  y el Display, son tomados de los lab2, lab5 y lab4  respectivamente. Adicional a la estructura de cada operación se encuentra el decodificador  y el multiplexador.
+El diagrama estructural, se soporta en los componentes desarrollados en los anteriores laboratorios. De esta manera,  tanto el sumador, el multiplicador  y el Display, son tomados de los lab2, lab5 y lab4  respectivamente. Adicional a la estructura de cada operaciÃ³n se encuentra el decodificador  y el multiplexador.
 
 
 ## Suma
@@ -82,11 +82,11 @@ endmodule
 ## Multiplicacion 
 ## Funcionamiento (tomado de la presentacion de clase).
 
-El algoritmo de multiplicaci�n que se implementa se basa en productos parciales (PP). Se realiza la multiplicaci�n iniciando con el bit menos significativo del multiplicador, el resultado de la multiplicaci�n se suma al primer producto parcial y se obtiene el segundo producto parcial; si el bit del multiplicador es 0 no se afecta el contenido de PP, por lo que no se realiza la suma. A continuaci�n se realiza la multiplicaci�n del siguiente bit (a la izquierda del LSB) y el resultado se suma al producto parcial pero corrido un bit a la izquierda. Este proceso continua hasta completar todos los bits del multiplicador y el �ltimo producto parcial es el resultado final.
+El algoritmo de multiplicación que se implementa se basa en productos parciales (PP). Se realiza la multiplicación iniciando con el bit menos significativo del multiplicador, el resultado de la multiplicación se suma al primer producto parcial y se obtiene el segundo producto parcial; si el bit del multiplicador es 0 no se afecta el contenido de PP, por lo que no se realiza la suma. A continuación se realiza la multiplicación del siguiente bit (a la izquierda del LSB) y el resultado se suma al producto parcial pero corrido un bit a la izquierda. Este proceso continua hasta completar todos los bits del multiplicador y el último producto parcial es el resultado final.
 
-La descripci�n de la operaci�n esta en las presentaciones de clase
+La descripción de la operación esta en las presentaciones de clase
 
-La caja negra tiene como entradas multiplicando y el multiplicador (A y B), se�ales de m bits cada una. la salida es el resultado de la multiplicaci�n PP (Bus de m Bits). Ademas, la se�al de reloj (CLOCK), entrada. Las se�ales INIT y DONE, entrada y salida, se utilizan para iniciar el proceso de multiplicaci�n e indicar que el resultado esta a disponible respectivamente
+La caja negra tiene como entradas multiplicando y el multiplicador (A y B), señales de m bits cada una. la salida es el resultado de la multiplicación PP (Bus de m Bits). Ademas, la señal de reloj (CLOCK), entrada. Las señales INIT y DONE, entrada y salida, se utilizan para iniciar el proceso de multiplicación e indicar que el resultado esta a disponible respectivamente
 
 ![caja negra Multiplicacion](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/CAJA%20NEGRA%20MULTIPLICADOR.PNG)
 
