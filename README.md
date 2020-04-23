@@ -1,6 +1,6 @@
 # Laboratorio  05
 
-## ALU - Grupo 11
+## ALU - Grupo 11 Corte 2
 
 #### 1. Pedro Javier Puerto    61165
 #### 2. Wolfran Esteban Suarez 78259
