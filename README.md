@@ -90,8 +90,8 @@ module sumador4bits(
  
 
 endmodule
-## Multiplicacion 
-## Funcionamiento (tomado de la presentacion de clase).
+## Multiplicación 
+## Funcionamiento.
 
 El algoritmo de multiplicación que se implementa se basa en productos parciales (PP). Se realiza la multiplicación iniciando con el bit menos significativo del multiplicador, el resultado de la multiplicación se suma al primer producto parcial y se obtiene el segundo producto parcial; si el bit del multiplicador es 0 no se afecta el contenido de PP, por lo que no se realiza la suma. A continuación se realiza la multiplicación del siguiente bit (a la izquierda del LSB) y el resultado se suma al producto parcial pero corrido un bit a la izquierda. Este proceso continua hasta completar todos los bits del multiplicador y el último producto parcial es el resultado final.
 
@@ -110,7 +110,7 @@ La caja negra tiene como entradas multiplicando y el multiplicador (A y B), señ
 ![Datapath](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/unidad%20de%20control%20datapath%201.PNG)
 
 
-##Instanciar
+## Codigo multiplicador
 
 module multiplicador( input [2:0] MR, 
 
