@@ -29,17 +29,6 @@ El proceso de implementación de la unidad lógica aritmética está condicionad
 ## Desarrollo . 
 De acuerdo con las prácticas propuestas a lo largo del semestre, se realiza instanciamiento de los desarrollos obtenidos.
 como primer paso se vincula a la unidad el sumador, tanto de 1 como de 4 bits, en segunda instancia se adjunta diseño del operador resta, en base a sumas con complemento A2, en tercer lugar se vincula el código perteneciente al miltiplicador y finalmente diseño anterior del divisor, obteniendo así las operacines básicas de una ALU, con programación de su posterior visualización mediante verilog y ayuda remota de una FPGA.
-##
-
-
-
-Por lo tanto, la unidad debe contar con:
-
-1. Los dos puertos de entrada A y B. cada uno de  3 bits.
-2. La seÃ±al `opcode` de dos bits, para configurar la operaciÃ³n que se realiza con los datos de `portA` y `portB`.
-3. La a visualizaciÃ³n de unidad debe tener las salidas de los 4 Ã¡nodos, `An`  y las 7 seÃ±ales de los cÃ¡todos, `sseg`.
-4. Para las FSM  y las visualizaciÃ³n dinÃ¡mica, se debe incluir la seÃ±al de `clk` de entrada.
-5. la seÃ±al de reset del sistema
 
 ## Diagrama de caja negra
 
