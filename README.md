@@ -46,7 +46,7 @@ El diagrama estructural, soporta en los componentes desarrollados en los anterio
 
 ## Suma
  
-Se realiza la  definicion de  una caja negra de entradas y salidas del bloque funcional.
+Caja negra de entradas y salidas del bloque funcional.
 
 ![caja negra](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/CAJA%20NEGRA%20SUMADOR.PNG)
 
