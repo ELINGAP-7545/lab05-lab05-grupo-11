@@ -90,14 +90,21 @@ La caja negra tiene como entradas multiplicando y el multiplicador (A y B), seña
 
 ![caja negra Multiplicacion](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/CAJA%20NEGRA%20MULTIPLICADOR.PNG)
 
+##Diagrama funcional
+
+![Diagrama Funcional](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/DESCRIPCION%20FUNCIONAL%20MULTIPLICADOR.PNG)
+
+
 ##Instanciar
 
 module multiplicador( input [2:0] MR, 
-							 input [2:0] MD, 
-							input init, 
-							 input clk,  
-							 output reg [5:0] pp, 
-							 output reg done
+
+input [2:0] MD, 
+input init, 
+input clk,  
+output reg [5:0] pp, 
+output reg done
+
     );
 
 reg sh;
@@ -199,6 +206,8 @@ end
 
 
 endmodule
+
+##Division
 
 
 
