@@ -238,7 +238,27 @@ endmodule
 		reg done;
 		reg [1:0] i;
  
- 
+#### Bloque de desplazamiento, adición y sustracción para la divición.
+		always @(posedge clk) begin
+		 if (init==1) begin
+			acum = 0;
+			Result=0;
+			done=0;
+			Result=A;
+			for (i=0; i<3; i=i+1) begin
+				 acum = acum << 1;
+				 acum[0] = Result [2];
+				 Result = Result << 1;
+				 if (acum >= B) begin
+					 Result = Result+1;
+					 acum = acum-B;
+				end
+			end
+		done = 1;
+		end
+		end
+		endmodule 
+
  
  
  
