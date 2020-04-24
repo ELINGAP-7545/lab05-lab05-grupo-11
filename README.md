@@ -11,11 +11,11 @@
 ## Introduccion
 
 Se realiza la implementacion de ALU "unidad logico aritmética" con sus respectivas operaciones basicas, como son:
-a) suma.
-B) resta.
-c) multiplicación.
-d) división.
-con visualización en display 7 segmentos mediante uso de FPGA intel en modo remoto, utilizando la página labs land.
+#### a) suma.
+#### B) resta.
+#### c) multiplicación.
+#### d) división.
+#### con visualización en display 7 segmentos mediante uso de FPGA intel en modo remoto, utilizando la página labs land.
 
 
 ## Descripcionn 
