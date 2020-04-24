@@ -101,7 +101,7 @@ La caja negra tiene como entradas multiplicando y el multiplicador (A y B), señ
 
 ![caja negra Multiplicacion](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/CAJA%20NEGRA%20MULTIPLICADOR.PNG)
 
-##Diagrama funcional
+## Diagrama funcional
 
 ![Diagrama Funcional](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/DESCRIPCION%20FUNCIONAL%20MULTIPLICADOR.PNG)
 
