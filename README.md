@@ -75,10 +75,10 @@ nstanciamiento de sumador de un bit a 4bits
 ## Instanciamiento sumador de 4 bits
 module sumador4bits(
 	
-	 input [3:0] xi,
-    input [3:0] yi,
-    output [3:0] zi,
-    output co
+	input [3:0] xi,
+        input [3:0] yi,
+        output [3:0] zi,
+        output co
 	 );
 	
 	wire c1, c2, c3;
