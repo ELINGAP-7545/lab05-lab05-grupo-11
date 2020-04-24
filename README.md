@@ -25,9 +25,11 @@ El proceso de implementación de la unidad lógica aritmética está condicionad
 #### c) -10- Para Multiplicación.
 #### d) -11- Para División
 #### Posteriormente cada operación realizada tendra verificación visual en 2 displays de 7 segmentos a través de una FPGA remota y a su vez constancia en el diagrama de estados lógicos obtenidos en la simulación del software de implemenatción.  
-## Desarrollo del laboratorio. 
-Como ejercicio acadademico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicaciÃ³n y divisiÃ³n.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selecciÃ³n de la operaciÃ³n se realiza acorde a la seÃ±al opcode, y segun la siguiente tabla:
 
+## Desarrollo . 
+De acuerdo con las prácticas propuestas a lo largo del semestre, se realiza instanciamiento de los desarrollos obtenidos.
+como primer paso se vincula a la unidad el sumador, tanto de 1 como de 4 bits, en segunda instancia se adjunta diseño del operador resta, en base a sumas con complemento A2, en tercer lugar se vincula el código perteneciente al miltiplicador y finalmente diseño anterior del divisor, obteniendo así las operacines básicas de una ALU, con programación de su posterior visualización mediante verilog y ayuda remota de una FPGA.
+##
 
 
 
