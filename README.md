@@ -18,8 +18,8 @@ Se realiza la implementacion de ALU "unidad logico aritmética" con sus respecti
 #### con visualización en display 7 segmentos mediante uso de FPGA intel en modo remoto, utilizando la página labs land.
 
 
-## Descripcionn 
-La unidad aritmÃ©tica, es tal que cuenta con componentes para realizar operaciones aritmÃ©ticas. cada operaciÃ³n aritmÃ©tica es ejecutada acuerdo al cÃ³digo de la operaciÃ³n. 
+## Descripción
+El proceso de  
 
 ## Desarrollo del laboratorio. 
 Como ejercicio acadademico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicaciÃ³n y divisiÃ³n.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selecciÃ³n de la operaciÃ³n se realiza acorde a la seÃ±al opcode, y segun la siguiente tabla:
