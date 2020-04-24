@@ -221,6 +221,7 @@ endmodule
 
 ## Division
 
+####  Entradas y Salidas Caja negra Bloque Divisor
 	module div3b(A, B, init, clk, reset, Result, done);
 
 		input [2:0] A;
