@@ -165,29 +165,29 @@ module multiplicador( input [2:0] MR,
 #### FSM 
 parameter START =0,  CHECK =1, ADD =2, SHIFT =3, END1 =4;
 
-always @(posedge clk) begin
+    always @(posedge clk) begin
 	case (status)
 	START: begin
 		sh=0;
 		add=0;
 		if (init) begin
-			status=CHECK;
-			done =0;
-			rst=1;
-		end
-		end
+		status=CHECK;
+		done =0;
+		rst=1;
+	     end
+	 end
 	CHECK: begin 
-		done=0;
-		rst=0;
-		sh=0;
-		add=0;
-		if (B[0]==1)
-			status=ADD;
-		else
-			status=SHIFT;
-		end
-	ADD: begin
-		done=0;
+	       done=0;
+	       rst=0;
+	       sh=0;
+	       add=0;
+	       if (B[0]==1)
+	       status=ADD;
+	       else
+	       status=SHIFT;
+	end
+	 ADD: begin
+	      done=0;
 		rst=0;
 		sh=0;
 		add=1;
