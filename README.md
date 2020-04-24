@@ -135,16 +135,16 @@ module multiplicador( input [2:0] MR,
 #### bloques de registros de desplazamiento para A y B
     always @(posedge clk) begin
    
-     if (rst) begin
-		A = {3'b000,MD};
-		B = MR;
-	end
-	else	begin 
-     if (sh) begin
-		A= A << 1;
-		B = B >> 1;
-		end
-	end
+       if (rst) begin
+       A = {3'b000,MD};
+       B = MR;
+    end
+       else	begin 
+       if (sh) begin
+       A= A << 1;
+       B = B >> 1;
+       end
+    end
 
         end 
 
