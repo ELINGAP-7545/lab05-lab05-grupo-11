@@ -199,9 +199,9 @@ parameter START =0,  CHECK =1, ADD =2, SHIFT =3, END1 =4;
 		sh=1;
 		add=0;
 		if (z==1)
-			status=END1;
+		status=END1;
 		else
-			status=CHECK;
+		status=CHECK;
 		end
 	END1: begin
 		done =1;
@@ -210,16 +210,16 @@ parameter START =0,  CHECK =1, ADD =2, SHIFT =3, END1 =4;
 		add =0;
 		status =START;
 	end
-	 default:
+	        default:
 		status =START;
 	endcase 
 	
-end 
+     end 
 
 
 endmodule
 
-##Division
+## Division
 
 
 
