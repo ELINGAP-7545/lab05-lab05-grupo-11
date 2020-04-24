@@ -54,26 +54,25 @@ nstanciamiento de sumador de un bit a 4bits
 
 ![caja negra sumador 4bits](https://github.com/ELINGAP-7545/lab05-lab05-grupo-11/blob/master/SUMADOR%204%20BITS.PNG)
 
-#Instanciamiento suma:
+# Suma de 1 bit
 
-`timescale 1ns / 1ps
+####`timescale 1ns / 1ps
 
-module sum4b(init, xi, yi,co,sal);
+#### module sum4b(init, xi, yi,co,sal);
 
-  input init;
-  input [3 :0] xi;
-  input [3 :0] yi;
-  output co;
-  output [3 :0] sal;
+  #### input init;
+  #### input [3 :0] xi;
+  #### input [3 :0] yi;
+  #### output co;
+  #### output [3 :0] sal;
   
-  
-  wire [4:0] st;
-  assign sal= st[3:0];
-  assign Cout = st[4];
+  #### wire [4:0] st;
+  #### assign sal= st[3:0];
+  #### assign Cout = st[4];
 
-  assign st  = 	xi+yi;
+  #### assign st = xi+yi;
 
-endmodule
+#### endmodule
 
 ## Multiplicacion 
 ## Funcionamiento (tomado de la presentacion de clase).
