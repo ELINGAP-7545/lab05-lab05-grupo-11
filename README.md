@@ -32,7 +32,7 @@ como primer paso se vincula a la unidad el sumador, tanto de 1 como de 4 bits, e
 
 ## Diagrama de caja negra
 
-Segúnn las especificaciones anteriormente descritas, la caja funcional de la unidad aritmética propuesta es:
+Según las especificaciones anteriormente descritas, la caja funcional de la unidad aritmética propuesta es:
 
 ![caja negra](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab06_Unidad_aritmetica/doc/cajanegra.png)
 
