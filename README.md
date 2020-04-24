@@ -6,7 +6,7 @@
 #### 2. Wolfran Esteban Suarez 78259
 #### 3. Jorge Sanchez Abella   79344
 
-# lab05 : Unidad de suma, resta, multiplicacion, division y visualizacion BCD
+## lab05 : Unidad de suma, resta, multiplicación, división y visualización BCD
 
 ## Introduccion
 
@@ -19,17 +19,17 @@ Se realiza la implementacion de ALU "unidad logico aritmética" con sus respecti
 
 
 ## Descripción
-El proceso de  
-
+El proceso de implementación de la unidad lógica aritmética está condicionada por un opcode, el cuál cumple la función de ser un menú de selección que permite elegir las operaciones a realizar, dadas de la siguiente manera.
+#### a) -00- Para Suma.
+#### b) -01- Para Resta.
+#### c) -10- Para Multiplicación.
+#### d) -11- Para División
+#### Posteriormente cada operación realizada tendra verificación visual en 2 displays de 7 segmentos a través de una FPGA remota y a su vez constancia en el diagrama de estados lógicos obtenidos en la simulación del software de implemenatción.  
 ## Desarrollo del laboratorio. 
 Como ejercicio acadademico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicaciÃ³n y divisiÃ³n.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selecciÃ³n de la operaciÃ³n se realiza acorde a la seÃ±al opcode, y segun la siguiente tabla:
 
 
-opcode | operacionn  enteros positivos
-00| suma
-01| resta 
-10| multiplicacion
-11| division 
+
 
 Por lo tanto, la unidad debe contar con:
 
