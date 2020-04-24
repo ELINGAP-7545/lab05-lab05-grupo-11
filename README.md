@@ -232,7 +232,11 @@ endmodule
 		output [2:0] Result;
 		output done;
 
- 
+#### Registros Utilizados
+		reg [2:0] acum;
+		reg [2:0] Result;
+		reg done;
+		reg [1:0] i;
  
  
  
