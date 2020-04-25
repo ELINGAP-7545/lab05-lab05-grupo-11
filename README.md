@@ -273,7 +273,10 @@ endmodule
 		output done;
 		
 #### Registros utilizados
-
+		reg [2:0] acum;
+		reg [2:0] Result;
+		reg done;
+		reg [1:0] i;
 
 
  
