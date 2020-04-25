@@ -252,12 +252,12 @@ endmodule
 		        if (acum >= B) begin
 		        Result = Result+1;
 			acum = acum-B;
-			end
-			end
+	              end
+		end
 		        done = 1;
-		        end
-		        end
-		        endmodule 
+		      end
+		end
+     endmodule 
 
 ## Resta.
 
