@@ -246,18 +246,18 @@ endmodule
 			done=0;
 			Result=A;
 			for (i=0; i<3; i=i+1) begin
-				 acum = acum << 1;
-				 acum[0] = Result [2];
-				 Result = Result << 1;
-				 if (acum >= B) begin
-					 Result = Result+1;
-					 acum = acum-B;
-				end
+		        acum = acum << 1;
+		        acum[0] = Result [2];
+		        Result = Result << 1;
+		        if (acum >= B) begin
+		        Result = Result+1;
+			acum = acum-B;
 			end
-		done = 1;
-		end
-		end
-		endmodule 
+			end
+		        done = 1;
+		        end
+		        end
+		        endmodule 
 
 ## Resta.
 
