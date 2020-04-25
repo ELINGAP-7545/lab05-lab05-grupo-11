@@ -328,7 +328,8 @@ endmodule
 	  endcase
 	end
 
-#### Modulo de Implementación para uso de 2 Displays 7Seg
+
+### Modulo de Implementación para uso de 2 Displays 7Seg
 
 #### Entradas y salidas :
 	module dos_displays(
@@ -385,8 +386,14 @@ endmodule
 		wire init_mult;
 		wire init_div;
 
-#### Declaración del clock y registro selesctor de operación:
+#### Declaración del clock y registro selector de operación:
 		// Declaraciónes adicionales
 		wire clk;
 		wire [3:0] operacion;
 
+#### Asignaciónes adicionales:
+		assign clk = G_CLK_50;
+
+		assign portA  = V_SW [3:0]; // Entrada A
+		assign portB  = V_SW [7:4]; // Entrada B
+		assign opcode = V_SW [9:8]; // Bits de selección de operación
