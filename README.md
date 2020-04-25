@@ -271,6 +271,8 @@ endmodule
 		input reset;
 		output [3:0] Result;
 		output done;
+		
+#### Registros utilizados
 
 
 
