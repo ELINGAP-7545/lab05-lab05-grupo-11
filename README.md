@@ -401,8 +401,8 @@ endmodule
 #### Asignaciónes adicionales:
 		assign clk = G_CLK_50;
 
-		assign portA  = V_SW [3:0]; // Entrada A
-		assign portB  = V_SW [7:4]; // Entrada B
+		assign portB  = V_SW [3:0]; // Entrada B
+		assign portA  = V_SW [7:4]; // Entrada A
 		assign opcode = V_SW [9:8]; // Bits de selección de operación
 
 #### Bloque de Codificación de las operacioes que realizará la ALU:
