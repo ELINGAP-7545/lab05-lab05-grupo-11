@@ -412,5 +412,17 @@ endmodule
 		endcase
 	end
 	
-#### 
+#### Descripción del Multiplexor y configuración del selector:
+	always @(*) begin
+		case(opcode) 
+			2'b00: int_bcd <={8'b00,sal_suma};
+			2'b01: int_bcd <={8'b00,sal_resta};
+			2'b10: int_bcd <={8'b00,sal_mult};
+			2'b11: int_bcd <={8'b00,sal_div};
+			default:
+			int_bcd <= 0;
+		endcase
+	end
+	
+
 
