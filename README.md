@@ -350,3 +350,19 @@ endmodule
 		BCDtoSSeg display2( .v_sw(decenas), .g_hex(G_HEX1));
 
 	endmodule
+
+
+ ##* Codigo principal ALU *
+ 
+ ####  Entradas y salidas Bloque Alu
+ 	module alu(
+		input    [9:0] V_SW,   
+		output   [0:6] G_HEX0,
+		output   [0:6] G_HEX1,
+		input G_CLK_50
+	);
+##### Para la entrada "V_SW" se divide de la siquiente manera
+
+		assign portA  = V_SW [3:0]; // Entrada A
+		assign portB  = V_SW [7:4]; // Entrada B
+		assign opcode = V_SW [9:8]; // Bits de selección de operación
