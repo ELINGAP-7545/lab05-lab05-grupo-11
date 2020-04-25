@@ -424,5 +424,11 @@ endmodule
 		endcase
 	end
 	
+#### instanciación de todos los componnetes:
 
+	sumador4bits sumador( .xi({1'b0,portA}), .yi({1'b0,portB}),.init(init_suma),.sal(sal_suma));              // Sumador
+	mult3b multiplicador( .MR(portA), .MD(portB), .init(init_mult),.clk(clk), .pp(sal_mult));		  // Multiplicador
+	res3b  restador     ( .A(portA), .B(portB), .init(init_resta),.S(sal_resta));				  // Restador
+	div3b  divisor      ( .A(portA), .B(portB), .init(init_div), .clk(clk), .reset(rst), .Result(sal_div));   // Divisor
+	dos_displays visualizacion ( .V_SW (int_bcd[7:0]), .G_HEX0 (G_HEX0), .G_HEX1(G_HEX1));			  // Visualización
 
