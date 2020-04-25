@@ -277,7 +277,7 @@ endmodule
 #### Configuración de Init
 		assign S = init?salida:0;
 
-#### Bloque de Complemento A2 y Sstracción
+#### Bloque de Complemento A2 y Sustracción
 	always @ ( * ) begin// siempre que haya algun cambio dentro de ( * ) se ejecuta
 		
 		CA2 = ~B+1;		            // Complemento A2 entrada
@@ -293,6 +293,14 @@ endmodule
 	end
  
  
+ ## Visualización en Displays 7 Segmentos
  
- 
+ #### Entradas, Salidas y registros Caja negra de visualización
+	module BCDtoSSeg (v_sw, g_hex);
+
+		input  wire [3:0] v_sw;
+		output wire [0:6] g_hex;
+		 
+		reg [0:6] SSeg;
+		assign g_hex = SSeg;
  
