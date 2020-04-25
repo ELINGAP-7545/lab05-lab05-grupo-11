@@ -276,8 +276,21 @@ endmodule
 
 #### Configuración de Init
 		assign S = init?salida:0;
+
+#### Bloque de Complemento A2 y Sstracción
+	always @ ( * ) begin// siempre que haya algun cambio dentro de ( * ) se ejecuta
 		
-	
+		CA2 = ~B+1;		            // Complemento A2 entrada
+		resta = A + CA2;
+		if (resta[4] == 1) begin            // Cuando el MSB es más es 1, el resultado es negativo
+			salida = ~resta+1;          // Complemento A2 Salida
+			salida = salida + 10000 ;   // Bit de signo
+		end 
+		else begin
+			salida = resta;
+	   end
+		
+	end
  
  
  
