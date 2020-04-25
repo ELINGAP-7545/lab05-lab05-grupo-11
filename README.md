@@ -259,7 +259,19 @@ endmodule
 		end
      endmodule 
 
-## Resta.
+## Resta
+
+#### Entradas y salidas caja negra Restador
+	module div3b(A, B, init, clk, reset, Result, done);
+
+		input [2:0] A;
+		input [2:0] B;
+		input init;
+		input clk;
+		input reset;
+		output [3:0] Result;
+		output done;
+
 
 
  
