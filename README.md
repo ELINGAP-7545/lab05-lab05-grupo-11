@@ -262,23 +262,22 @@ endmodule
 ## Resta
 
 #### Entradas y salidas caja negra Restador
-	module div3b(A, B, init, clk, reset, Result, done);
-
-		input [2:0] A;
-		input [2:0] B;
-		input init;
-		input clk;
-		input reset;
-		output [3:0] Result;
-		output done;
+	module res3b(
+		input [3:0] A,
+		input [3:0] B,
+		input init,
+		output [3:0] S
+	);
 		
 #### Registros utilizados
-		reg [2:0] acum;
-		reg [2:0] Result;
-		reg done;
-		reg [1:0] i;
+		reg [4:0] resta; 
+		reg [4:0] salida;
+		reg [4:0] CA2;
 
-
+#### Configuración de Init
+		assign S = init?salida:0;
+		
+	
  
  
  
