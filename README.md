@@ -222,42 +222,47 @@ endmodule
 ## Division
 
 ####  Entradas y Salidas Caja negra Bloque Divisor
-	module div3b(A, B, init, clk, reset, Result, done);
-
-		input [2:0] A;
-		input [2:0] B;
-		input init;
-		input clk;
-		input reset;
-		output [2:0] Result;
-		output done;
-
+    module divisor( A, B, init, clk, z, done);
+	
+		input [15:0] A;  
+		input [15:0] B;
+		input init; 
+		input clk; 
+		output reg[15:0] z; 
+		output reg done;
+		
 #### Registros Utilizados
-		reg [2:0] acum;
-		reg [2:0] Result;
-		reg done;
-		reg [1:0] i;
+		reg [15:0] Q0;
+		reg [15:0] Q1;
+		reg [15:0] Q2;
+		reg [15:0] A2;
+		reg [15:0] n = 0;
  
 #### Bloque de desplazamiento, adición y sustracción para la divición.
 		always @(posedge clk) begin
-		 if (init==1) begin
-			acum = 0;
-			Result=0;
-			done=0;
-			Result=A;
-			for (i=0; i<3; i=i+1) begin
-		        acum = acum << 1;
-		        acum[0] = Result [2];
-		        Result = Result << 1;
-		        if (acum >= B) begin
-		        Result = Result+1;
-			acum = acum-B;
-	              end
-		end
-		        done = 1;
-		      end
-		end
-     endmodule 
+			 
+		//complemento a 2
+		A2 = ~A +1;
+	        Q0 = B;
+	end
+		always @(posedge clk) begin
+		Q1 = A2+Q0;
+	end
+		always @(posedge clk) begin
+		if (Q1 < 0)
+		z = n;
+	 else
+		n = n+1;
+	end
+		always @(posedge clk) begin
+		if (Q1 == 0)
+		z = n;
+	else
+	        Q2 = A2+Q1;
+	
+	end
+    endmodule
+
 
 ## Resta
 
