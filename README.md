@@ -57,17 +57,17 @@ nstanciamiento de sumador de un bit a 4bits
 ## Suma de 1 bit
 #### module sum1b(init, xi, yi,co,sal);
 
-    #### input init;
-    #### input [3 :0] xi;
-    #### input [3 :0] yi;
-    #### output co;
-    #### output [3 :0] sal;
+    input init;
+    input [3 :0] xi;
+    input [3 :0] yi;
+    output co;
+    output [3 :0] sal;
   
-    #### wire [4:0] st;
-    #### assign sal= st[3:0];
-    #### assign Cout = st[4];
+    wire [4:0] st;
+    assign sal= st[3:0];
+    assign Cout = st[4];
 
-    #### assign st = xi+yi;
+    assign st = xi+yi;
 
 #### endmodule
 
