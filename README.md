@@ -344,3 +344,9 @@ endmodule
 
 		assign decenas  =  V_SW / 10;
 		assign unidades =  V_SW - (decenas * 10);
+
+#### Instanciación de los displays
+		BCDtoSSeg display1( .v_sw(unidades), .g_hex(G_HEX0));
+		BCDtoSSeg display2( .v_sw(decenas), .g_hex(G_HEX1));
+
+	endmodule
