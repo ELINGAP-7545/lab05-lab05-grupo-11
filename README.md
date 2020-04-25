@@ -385,6 +385,8 @@ endmodule
 		wire init_resta;
 		wire init_mult;
 		wire init_div;
+		
+		reg [15:0]int_bcd;  // Salida total del sistema
 
 #### Declaración del clock y registro selector de operación:
 		// Declaraciónes adicionales
@@ -397,3 +399,18 @@ endmodule
 		assign portA  = V_SW [3:0]; // Entrada A
 		assign portB  = V_SW [7:4]; // Entrada B
 		assign opcode = V_SW [9:8]; // Bits de selección de operación
+
+#### Bloque de Codificación de las operacioes que realizará la ALU:
+	always @(*) begin           // Codificación de operaciones
+		case(opcode) 
+			2'b00: init<=1;
+			2'b01: init<=2;
+			2'b10: init<=4;
+			2'b11: init<=8;
+		default:
+			init <= 0;
+		endcase
+	end
+	
+#### 
+
