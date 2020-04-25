@@ -261,7 +261,7 @@ endmodule
 
 ## Resta
 
-#### Entradas y salidas caja negra Restador
+#### Entradas y salidas caja negra Restador:
 	module res3b(
 		input [3:0] A,
 		input [3:0] B,
@@ -269,15 +269,15 @@ endmodule
 		output [3:0] S
 	);
 		
-#### Registros utilizados
+#### Registros utilizados:
 		reg [4:0] resta; 
 		reg [4:0] salida;
 		reg [4:0] CA2;
 
-#### Configuración de Init
+#### Configuración de Init:
 		assign S = init?salida:0;
 
-#### Bloque de Complemento A2 y Sustracción
+#### Bloque de Complemento A2 y Sustracción:
 	always @ ( * ) begin// siempre que haya algun cambio dentro de ( * ) se ejecuta
 		
 		CA2 = ~B+1;		            // Complemento A2 entrada
@@ -295,7 +295,7 @@ endmodule
  
  ## Visualización en Displays 7 Segmentos
  
- #### Entradas, Salidas y registros Caja negra de visualización
+ #### Entradas, Salidas y registros Caja negra de visualización:
 	module BCDtoSSeg (v_sw, g_hex);
 
 		input  wire [3:0] v_sw;
@@ -304,7 +304,7 @@ endmodule
 		reg [0:6] SSeg;
 		assign g_hex = SSeg;
  
- #### Codificación BCD a 7 Segmentos
+ #### Codificación BCD a 7 Segmentos:
  	always @ ( * ) begin
 	  case (v_sw)
 		4'b0000: SSeg = 7'b0000001; // "0"  
@@ -330,7 +330,7 @@ endmodule
 
 #### Modulo de Implementación para uso de 2 Displays 7Seg
 
-#### Entradas y salidas 
+#### Entradas y salidas :
 	module dos_displays(
 
 		 input [7:0] V_SW,
@@ -338,14 +338,14 @@ endmodule
 		 output [0:6] G_HEX1
 		 );
  
-#### Separación de la salida en Unidades y Decenas
+#### Separación de la salida en Unidades y Decenas:
 		wire [7:0] unidades;
 		wire [7:0] decenas;
 
 		assign decenas  =  V_SW / 10;
 		assign unidades =  V_SW - (decenas * 10);
 
-#### Instanciación de los displays
+#### Instanciación de los displays:
 		BCDtoSSeg display1( .v_sw(unidades), .g_hex(G_HEX0));
 		BCDtoSSeg display2( .v_sw(decenas), .g_hex(G_HEX1));
 
@@ -354,7 +354,7 @@ endmodule
 
 ## Codigo principal ALU 
  
-####  Entradas y salidas Bloque Alu
+####  Entradas y salidas Bloque Alu:
  	module alu(
 		input    [9:0] V_SW,   
 		output   [0:6] G_HEX0,
@@ -376,10 +376,17 @@ endmodule
 		wire [3:0] portA;
 		wire [3:0] portB;
 		wire [1:0] opcode;
-#### Declaración de las entradas init de cada bloque de Operaciones
+		
+#### Declaración de las entradas init de cada bloque de Operaciones:
 		// Declaración de las entradas init 
 		reg  [3:0] init; 
 		wire init_suma;
 		wire init_resta;
 		wire init_mult;
 		wire init_div;
+
+#### Declaración del clock y registro selesctor de operación:
+		// Declaraciónes adicionales
+		wire clk;
+		wire [3:0] operacion;
+
