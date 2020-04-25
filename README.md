@@ -352,17 +352,28 @@ endmodule
 	endmodule
 
 
- ##* Codigo principal ALU *
+## Codigo principal ALU 
  
- ####  Entradas y salidas Bloque Alu
+####  Entradas y salidas Bloque Alu
  	module alu(
 		input    [9:0] V_SW,   
 		output   [0:6] G_HEX0,
 		output   [0:6] G_HEX1,
 		input G_CLK_50
 	);
-##### Para la entrada "V_SW" se divide de la siquiente manera
+   Para la entrada "V_SW" se divide de la siquiente manera
 
 		assign portA  = V_SW [3:0]; // Entrada A
 		assign portB  = V_SW [7:4]; // Entrada B
 		assign opcode = V_SW [9:8]; // Bits de selección de operación
+		
+#### Declaración de salidas de cada Bloque de Operaciónes:		
+		// Declaración de salidas de cada bloque 
+		wire [3:0] sal_suma;
+		wire [3:0] sal_resta;
+		wire [3:0] sal_div;
+		wire [5:0] sal_mult;
+		wire [3:0] portA;
+		wire [3:0] portB;
+		wire [1:0] opcode;
+		
