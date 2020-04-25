@@ -376,4 +376,10 @@ endmodule
 		wire [3:0] portA;
 		wire [3:0] portB;
 		wire [1:0] opcode;
-		
+#### Declaración de las entradas init de cada bloque de Operaciones
+		// Declaración de las entradas init 
+		reg  [3:0] init; 
+		wire init_suma;
+		wire init_resta;
+		wire init_mult;
+		wire init_div;
